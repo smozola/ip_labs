@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакти | Global Adventures Blog</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+    <header>
+        <h1>Зв'яжіться з нами <span role="img" aria-label="поштовий конверт">✉️</span></h1>
+        <p>Маєте запитання про наші маршрути, пропозиції щодо співпраці або просто хочете поділитися власними враженнями? Напишіть нам!</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Головна</a></li>
+            <li><a href="kyiv.html">Київ</a></li>
+            <li><a href="tokyo.html">Токіо</a></li>
+            <li><a href="rome.html">Рим</a></li>
+            <li><a href="gallery.html">Галерея</a></li>
+            <li><a href="contact.html">Контакти</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="contact-section">
+            <h2>Форма зворотного зв'язку</h2>
+            
+            <form action="#" method="post" class="contact-form">
+                <div class="form-group">
+                    <label for="user-name">Ваше ім'я:</label>
+                    <input type="text" id="user-name" name="name" placeholder="Іван Іванов" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="user-email">Електронна пошта:</label>
+                    <input type="email" id="user-email" name="email" placeholder="example@mail.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Тема повідомлення:</label>
+                    <input type="text" id="subject" name="subject" placeholder="Наприклад: Порада щодо готелю в Токіо" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Ваше повідомлення:</label>
+                    <textarea id="message" name="message" rows="6" placeholder="Напишіть ваше запитання або коментар..." required></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Надіслати повідомлення <span role="img" aria-label="паперовий літачок">✈️</span></button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Global Adventures Blog. Всі права захищено.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
