@@ -1,0 +1,81 @@
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+}
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+header#hero_container {
+    display: block;
+    position: relative;
+    width: 100%;
+    min-height: 500px;
+    background-color: #1a2942; /* Надійний фірмовий темно-синій колір */
+    color: #ffffff;
+    padding: 40px 0 0 0;
+    overflow: hidden;
+}
+header#hero_container .container {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+header#hero_container .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    width: 100%;
+}
+header#hero_container .col-sm-3, 
+header#hero_container .col-xs-12 {
+    position: relative;
+    min-height: 1px;
+    padding: 0;
+    flex: 1; /* Рівномірний розподіл на 4 частини */
+    min-width: 250px;
+}
+header#hero_container a, 
+header#hero_container [role="link"] {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    text-decoration: none;
+    background: rgba(255, 255, 255, 0.05);
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 25px 15px;
+    min-height: 130px;
+    text-align: center;
+    font-weight: 500;
+    transition: background 0.3s;
+}
+header#hero_container a:hover {
+    background: rgba(255, 255, 255, 0.15);
+    text-decoration: none;
+    color: #ffffff;
+}
+header#hero_container img, 
+header#hero_container svg {
+    max-width: 28px;
+    max-height: 28px;
+    width: auto;
+    height: auto;
+    margin-bottom: 10px;
+    display: block;
+}
+header#hero_container h1, 
+header#hero_container h2, 
+header#hero_container p,
+header#hero_container .form-group {
+    color: #ffffff;
+    text-align: center;
+    margin: 15px 20px;
+}
