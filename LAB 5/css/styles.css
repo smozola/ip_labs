@@ -1,181 +1,183 @@
-:root {
-    color-scheme: light;
-    font-family: "Roboto Condensed", Arial, sans-serif;
-    color: #252525;
-    background-color: #fff;
+﻿* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
 }
 
-* {
-    box-sizing: border-box;
+#hero {
+    min-height: 300px;
+    position: relative;
+    background-position: center center !important;
+    width: 100% !important;
+    background-size: cover !important;
+}
+
+#block-lpnu-main-menu, .region-sidebar-second, .logo, .page-header, #hero, #block-lpnushortcutstop4, #featured_container h2, #events_container, .news_teaser, .block-views-blockfront-page-news-block-3 h2, .paragraph--type--person-with-description .field--name-field-person-name, .view-header h1 {
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: normal;
+}
+
+div {
+    display: block;
+    unicode-bidi: isolate;
 }
 
 body {
-    min-width: 320px;
-    margin: 0;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #fff;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-header#hero_container {
-    width: 100%;
+html {
+    font-size: 10px;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
 }
 
-.hero {
-    position: relative;
-    display: flex;
-    min-height: 650px;
-    align-items: flex-end;
-    overflow: hidden;
-    background-color: #2e3192;
-    background-image: url("https://lpnu.ua/sites/default/files/styles/hero/public/2026/10/14/news/38003/veb.JPG?itok=gfrvbGZ3");
-    background-position: center;
-    background-size: cover;
-    color: #fff;
+:after, :before {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
 }
 
-.hero__overlay {
+@font-face {
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/robotocondensed/v31/ieVl2ZhZI2eCN5jzbjEETS9weq8-19-7DRs5.woff2) format('woff2');
+    unicode-range: U +0460 -052F, U +1C80 -1C8A, U +20B4, U +2DE0 -2DFF, U + A640-A69F, U + FE2E-FE2F;
+}
+
+.shadow {
+    min-height: 160px;
     position: absolute;
-    inset: 0;
-    background: linear-gradient(90deg, rgb(20 24 89 / 82%), rgb(20 24 89 / 18%));
-}
-
-.hero__content {
-    position: relative;
-    width: min(100% - 48px, 1200px);
-    margin: 0 auto;
-    padding: 48px 0 56px;
-}
-
-.hero h1 {
-    max-width: none;
-    margin: 0;
-    font-size: 50px;
-    font-weight: 500;
-    line-height: 1.1;
-    text-align: center;
-}
-
-.hero h1 a {
-    color: inherit;
-    text-decoration: none;
-}
-
-.hero h1 a:hover,
-.hero h1 a:focus-visible {
-    text-decoration: underline;
-    text-underline-offset: 0.12em;
-}
-
-.shortcuts {
-    background-color: #2e3192;
-}
-
-.shortcuts__list {
-    display: grid;
+    bottom: 0;
+    left: 0;
     width: 100%;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    margin: 0;
-    padding: 0;
-    list-style: none;
+    background: linear-gradient(to bottom, rgba(46, 49, 146, 0), rgba(46, 49, 146, 1));
 }
 
-.shortcuts__item a {
-    display: flex;
-    min-height: 120px;
-    align-items: center;
-    justify-content: center;
-    gap: 5px;
-    padding: 12px;
+#hero a:visited {
     color: #fff;
-    font-size: 22px;
+    text-decoration: none;
+    transition: color 3s ease-out;
+}
+
+a {
+    background-color: transparent;
+    color: #337ab7;
+    text-decoration: none;
+}
+
+a:-webkit-any-link {
+    cursor: pointer;
+    color: -webkit-link;
+}
+
+#hero h2 {
+    margin: 0 0 2.4rem 0;
+    font-size: 3.4rem;
+    text-align: center;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    font-family: inherit;
     font-weight: 500;
     line-height: 1.1;
+    color: inherit;
+}
+
+#block-lpnushortcutstop4 .col-xs-6 {
+    min-height: 104px;
+    position: relative;
+}
+
+.shortcut-1, .shortcut-4 {
+    background: rgb(37, 39, 117);
+}
+
+.col-xs-6 {
+    width: 50%;
+}
+
+.col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+    float: left;
+}
+
+.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+    padding-right: 15px;
+    padding-left: 15px;
+    position: relative;
+    min-height: 1px;
+}
+
+#block-lpnushortcutstop4 a:visited {
+    color: rgb(255, 255, 255);
     text-decoration: none;
+    transition: color 3s ease-out;
+}
+
+#block-lpnushortcutstop4 h2 {
+    font-size: 1.7rem;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
-    transition: opacity 160ms ease;
 }
 
-.shortcuts__item a:hover,
-.shortcuts__item a:focus-visible {
-    opacity: 0.8;
+#block-lpnushortcutstop4 h2 svg {
+    color: #00A1E4;
+    margin-right: 0.5rem;
 }
 
-.shortcuts__icon {
-    display: inline-block;
+svg:not(:root).svg-inline--fa {
+    overflow: visible;
+}
+
+.svg-inline--fa.fa-w-16 {
     width: 1em;
+}
+
+.svg-inline--fa {
+    display: inline-block;
+    font-size: inherit;
     height: 1em;
-    flex: 0 0 1em;
-    color: #00a1e4;
-    fill: currentColor;
+    vertical-align: -.125em;
 }
 
-@media (min-width: 992px) and (max-width: 1199px) {
-    .shortcuts__item a {
-        min-height: 124px;
-        font-size: 18px;
-    }
+svg:not(:root) {
+    overflow-clip-margin: content-box;
+    overflow: hidden;
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
-    .shortcuts__item a {
-        min-height: 110px;
-        font-size: 15px;
-    }
+.shortcut-1, .shortcut-3 {
+    background: none;
 }
 
-@media (max-width: 767.98px) {
-    .shortcuts__list {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
-    .shortcuts__item a {
-        min-height: 106px;
-        font-size: 17px;
-    }
+.col-sm-3 {
+    width: 25%;
 }
 
-@media (max-width: 1199px) {
-    .hero {
-        min-height: 500px;
-    }
-
-    .hero h1 {
-        font-size: 40px;
-    }
+.col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9 {
+    float: left;
 }
 
-@media (max-width: 767.98px) {
-    .hero h1 {
-        font-size: 34px;
-    }
+a:visited {
+    color: rgb(0, 118, 168);
+    text-decoration: none;
+    transition: color 0.5s ease-out;
 }
 
-@media (max-width: 520px) {
-    .hero {
-        min-height: 340px;
-        background-position: center;
-    }
-
-    .hero__content {
-        width: min(100% - 32px, 1200px);
-        padding: 36px 0;
-    }
+.fontyourface {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
 }
 
-@media (max-width: 479px) {
-    .hero h1 {
-        font-size: 22px;
-    }
-
-    .shortcuts__item a {
-        min-height: 104px;
-        font-size: 15px;
-    }
-}
-
-@media (prefers-reduced-motion: reduce) {
-    *,
-    *::before,
-    *::after {
-        scroll-behavior: auto !important;
-        transition-duration: 0.01ms !important;
-    }
-}
