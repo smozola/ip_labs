@@ -5,11 +5,12 @@
 }
 
 #hero {
+    background-image: url('images/image.png');
     min-height: 350px;
     position: relative;
     background-position: center center !important;
     width: 100% !important;
-    background-size: contain !important;
+    background-size: cover !important;
 }
 
 #block-lpnu-main-menu, .region-sidebar-second, .logo, .page-header, #hero, #block-lpnushortcutstop4, #featured_container h2, #events_container, .news_teaser, .block-views-blockfront-page-news-block-3 h2, .paragraph--type--person-with-description .field--name-field-person-name, .view-header h1 {
