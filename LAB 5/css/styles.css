@@ -5,7 +5,7 @@
 }
 
 #hero {
-    background-image: url('images/image.png');
+    background-image: url('../LAB 5/images/image.png');
     min-height: 350px;
     position: relative;
     background-position: center center !important;
@@ -71,7 +71,6 @@ html {
 
 a {
     background-color: transparent;
-    color: #337ab7;
     text-decoration: none;
 }
 
