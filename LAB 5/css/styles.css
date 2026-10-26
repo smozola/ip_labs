@@ -5,11 +5,11 @@
 }
 
 #hero {
-    min-height: 300px;
+    min-height: 350px;
     position: relative;
     background-position: center center !important;
     width: 100% !important;
-    background-size: cover !important;
+    background-size: contain !important;
 }
 
 #block-lpnu-main-menu, .region-sidebar-second, .logo, .page-header, #hero, #block-lpnushortcutstop4, #featured_container h2, #events_container, .news_teaser, .block-views-blockfront-page-news-block-3 h2, .paragraph--type--person-with-description .field--name-field-person-name, .view-header h1 {
@@ -24,7 +24,7 @@ div {
 }
 
 body {
-    font-size: 14px;
+    font-size: 1.6rem;
     line-height: 1.42857143;
     color: #333;
     background-color: #fff;
@@ -54,7 +54,7 @@ html {
 }
 
 .shadow {
-    min-height: 160px;
+    min-height: 120px;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -81,7 +81,7 @@ a:-webkit-any-link {
 
 #hero h2 {
     margin: 0 0 2.4rem 0;
-    font-size: 3.4rem;
+    font-size: 2.2rem;
     text-align: center;
 }
 
@@ -181,3 +181,115 @@ a:visited {
     font-weight: normal;
 }
 
+a:link {
+    color: #0076A8;
+    text-decoration: none;
+    transition: color 0.5s ease-out;
+}
+
+#hero .container {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.h1, .h2, .h3, h1, h2, h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.h2, h2 {
+    font-size: 30px;
+}
+
+@media only screen and (min-width: 480px) {
+    #hero h2 {
+        margin-bottom: 3rem;
+        font-size: 3.4rem;
+    }
+
+    .shadow {
+        min-height: 160px;
+    }
+
+    #hero {
+        min-height: 300px;
+    }
+
+    #block-lpnushortcutstop4 .col-xs-6 {
+        min-height: 106px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    #hero h2 {
+        margin-bottom: 3rem;
+        font-size: 4rem;
+    }
+
+    .shadow {
+        min-height: 215px;
+    }
+
+    #hero {
+        min-height: 400px;
+        margin-top: -55px;
+        border-top: 1px solid rgb(46, 49, 146);
+    }
+
+    #block-lpnushortcutstop4 .col-xs-6 {
+        min-height: 110px;
+    }
+
+    .shortcut-2, .shortcut-4 {
+        background: #252775;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    #hero h2 {
+        margin-bottom: 4rem;
+    }
+
+    .shadow {
+        min-height: 270px;
+    }
+
+    #hero {
+        min-height: 500px;
+    }
+
+    #block-lpnushortcutstop4 .col-xs-6 {
+        min-height: 124px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+.btn-group-vertical>.btn-group:after, .btn-group-vertical>.btn-group:before, .btn-toolbar:after, .btn-toolbar:before, .clearfix:after, .clearfix:before, .container-fluid:after, .container-fluid:before, .container:after, .container:before, .dl-horizontal dd:after, .dl-horizontal dd:before, .form-horizontal .form-group:after, .form-horizontal .form-group:before, .modal-footer:after, .modal-footer:before, .modal-header:after, .modal-header:before, .nav:after, .nav:before, .navbar-collapse:after, .navbar-collapse:before, .navbar-header:after, .navbar-header:before, .navbar:after, .navbar:before, .pager:after, .pager:before, .panel-body:after, .panel-body:before, .row:after, .row:before {
+    display: table;
+    content: " ";
+}
+
+.btn-group-vertical>.btn-group:after, .btn-toolbar:after, .clearfix:after, .container-fluid:after, .container:after, .dl-horizontal dd:after, .form-horizontal .form-group:after, .modal-footer:after, .modal-header:after, .nav:after, .navbar-collapse:after, .navbar-header:after, .navbar:after, .pager:after, .panel-body:after, .row:after {
+    clear: both;
+}
