@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS Flexbox Example</title>
+<style>
+/* Батьківський елемент - контейнер Flexbox */
+.container {
+display: flex;
+flex-direction: row; /* Напрямок елементів зліва направо */
+flex-wrap: wrap; /* Елементи переносяться, якщо не поміщаються */
+justify-content: space-between; /* Простір між елементами рівномірний */
+align-items: center; /* Вирівнювання по центру вертикалі */
+align-content: stretch; /* Ряди елементів розтягуються */
+height: 300px; /* Висота контейнера */
+background-color: lightgray;
+}
+/* Флекс-елементи */
+.item {
+flex-grow: 1; /* Елементи можуть збільшуватись */
+flex-shrink: 1; /* Елементи можуть зменшуватись */
+flex-basis: 150px; /* Початковий розмір елементів */
+background-color: lightblue;
+margin: 10px;
+padding: 20px;
+text-align: center;
+}
+
+/* Вирівнювання окремого елемента */
+.item:nth-child(2) {
+align-self: flex-end; /* Вирівнювання другого елемента по кінцю */
+order: -1; /* Зміна порядку другого елемента на початок */
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+<div class="item">Елемент 1</div>
+<div class="item">Елемент 2</div>
+<div class="item">Елемент 3</div>
+<div class="item">Елемент 4</div>
+</div>
+
+</body>
+</html>
