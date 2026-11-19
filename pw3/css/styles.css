@@ -1,0 +1,159 @@
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #333;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.site-header,
+.site-footer {
+  background-color: #333;
+}
+
+.nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav-list li {
+  margin: 10px;
+}
+
+.nav-list a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-list a:hover {
+  text-decoration: underline;
+}
+
+section {
+  padding: 20px;
+  margin: 20px 0;
+}
+
+#home {
+  line-height: 1.6;
+}
+
+#home h1 {
+  color: #0654b3;
+}
+
+.trivia-item {
+  display: flex;
+  align-items: center;
+}
+
+.trivia-item img {
+  width: 150px;
+  margin-right: 20px;
+  border-radius: 5px;
+}
+
+.categories-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.categories-list li {
+  margin: 10px;
+}
+
+.categories-list a {
+  color: #0654b3;
+  text-decoration: none;
+}
+
+.categories-list a:hover {
+  text-decoration: underline;
+}
+
+.scores-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.scores-table th,
+.scores-table td {
+  padding: 8px;
+  border: 1px solid #ccc;
+}
+
+.scores-table th {
+  background-color: #333;
+  color: white;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.04);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.btn-subscribe {
+  background-color: #0654b3;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  animation: pulse 2s infinite;
+}
+
+.btn-subscribe:hover {
+  background-color: #043d82;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  margin-top: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.btn-submit {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  font-size: 16px;
+}
+
+.btn-submit:hover {
+  background-color: #0654b3;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+}
+
+.site-footer {
+  color: white;
+  text-align: center;
+  padding: 15px;
+}

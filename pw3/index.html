@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>World Trivia</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav aria-label="Головна навігація">
+      <ul class="nav-list">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#trivia">Trivia</a></li>
+        <li><a href="#categories">Categories</a></li>
+        <li><a href="#scores">Scores</a></li>
+        <li><a href="#subscribe">Subscribe</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="home" class="section-home">
+      <h1>World Trivia</h1>
+      <p>
+        Ласкаво просимо на платформу World Trivia — місце для тих, хто любить перевіряти
+        ерудицію, відкривати цікаві факти з усього світу та змагатися з гравцями з різних країн.
+      </p>
+    </section>
+    <section id="trivia" class="section-trivia">
+      <h2>Цікаві факти та вікторини</h2>
+      <article class="trivia-item">
+        <img
+          src="images/geography.png"
+          alt="Географічна вікторина">
+        <div class="trivia-content">
+          <h3>Географія та подорожі</h3>
+          <p>Перевірте знання столиць, океанів, природних чудес і культурних традицій різних континентів.</p>
+        </div>
+      </article>
+      <article class="trivia-item">
+        <img
+          src="images/science.png"
+          alt="Наукова вікторина">
+        <div class="trivia-content">
+          <h3>Наука та технології</h3>
+          <p>Від відкриттів у космосі та фізиці до сучасних інженерії, телекомунікацій та штучного інтелекту.</p>
+        </div>
+      </article>
+      <article class="trivia-item">
+        <img
+          src="images/history.png"
+          alt="Історична вікторина">
+        <div class="trivia-content">
+          <h3>Історія та культура</h3>
+          <p>Ключові події минулого, видатні постаті, література та мистецтво, що сформували наш світ.</p>
+        </div>
+      </article>
+    </section>
+    <section id="categories" class="section-categories">
+      <h2>Категорії</h2>
+      <ul class="categories-list">
+        <li><a href="#trivia">Географія</a></li>
+        <li><a href="#trivia">Наука</a></li>
+        <li><a href="#trivia">Історія</a></li>
+        <li><a href="#trivia">Технології</a></li>
+        <li><a href="#trivia">Мистецтво</a></li>
+      </ul>
+    </section>
+    <section id="scores" class="section-scores">
+      <h2>Таблиця результатів (Scores)</h2>
+      <div class="table-wrapper">
+        <table class="scores-table">
+          <thead>
+            <tr>
+              <th>Rank</th>
+              <th>Name</th>
+              <th>Score</th>
+              <th>Country</th>
+              <th>Category</th>
+              <th>Date</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Олена Коваль</td>
+              <td>2450</td>
+              <td>Україна</td>
+              <td>Наука</td>
+              <td>2026-11-15</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Марко Ткач</td>
+              <td>2310</td>
+              <td>Україна</td>
+              <td>Географія</td>
+              <td>2026-11-16</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Liam Carter</td>
+              <td>2190</td>
+              <td>Canada</td>
+              <td>Історія</td>
+              <td>2026-11-17</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Sofia Rossi</td>
+              <td>2080</td>
+              <td>Italy</td>
+              <td>Мистецтво</td>
+              <td>2026-11-18</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <section id="subscribe" class="section-subscribe">
+      <h2>Підписка на щоденну головоломку</h2>
+      <p>Отримуйте нове запитання щодня та тренуйте логіку й пам'ять.</p>
+      <button
+        type="button"
+        class="btn-subscribe pulse-btn"
+        aria-label="Підписатися на щоденну головоломку Puzzle of the Day">
+        Puzzle of the Day <span class="sr-only">— оформити безкоштовну щоденну підписку</span>
+      </button>
+    </section>
+    <section id="contact" class="section-contact">
+      <h2>Контакти</h2>
+      <p>Маєте пропозицію щодо запитань або хочете співпрацювати з командою World Trivia? Напишіть нам.</p>
+      <form class="contact-form" action="#" method="post">
+        <label for="name">Ім'я</label>
+        <input id="name" name="name" type="text" required placeholder="Введіть ваше ім'я">
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required placeholder="name@example.com">
+        <label for="message">Повідомлення</label>
+        <textarea id="message" name="message" rows="4" required placeholder="Ваше повідомлення..."></textarea>
+        <button type="submit" class="btn-submit">Надіслати</button>
+      </form>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <p>&copy; 2026 World Trivia. Усі права захищено.</p>
+  </footer>
+</body>
+</html>
